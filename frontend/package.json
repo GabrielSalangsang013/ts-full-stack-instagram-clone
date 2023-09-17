@@ -1,0 +1,51 @@
+{
+  "name": "instagram-clone",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.10.1",
+    "@headlessui/react": "^1.7.15",
+    "@splidejs/react-splide": "^0.7.12",
+    "@types/lodash": "^4.14.197",
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "@types/react-easy-crop": "^2.0.0",
+    "autoprefixer": "10.4.14",
+    "cookie": "^0.5.0",
+    "cookies-next": "^3.0.0",
+    "dom-to-image": "^2.6.0",
+    "dompurify": "^3.0.5",
+    "emoji-picker-react": "^4.4.10",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "formik": "^2.4.2",
+    "he": "^1.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "next": "13.4.10",
+    "postcss": "8.4.26",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-loading-skeleton": "^3.3.1",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.5.1",
+    "@types/dom-to-image": "^2.6.4",
+    "@types/dompurify": "^3.0.2",
+    "@types/he": "^1.2.0"
+  }
+}

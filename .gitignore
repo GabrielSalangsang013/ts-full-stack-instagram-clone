@@ -1,0 +1,10 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+/backend/node_modules
+/backend/.env
+/backend/dist
+/backend/.gitignore
+
+/frontend/node_modules
+/frontend/.env
+/frontend/.gitignore
