@@ -10,7 +10,6 @@ import lodash from 'lodash';
 import User from '../models/userModel.js';
 import Profile from '../models/profileModel.js';
 import CSRFTokenSecret from '../models/csrfTokenSecretModel.js';
-import GoogleAuthenticator from '../models/googleAuthenticatorModel.js';
 // * ----------------- MODELS -----------------
 
 // * ----------------- UTILITIES -----------------
