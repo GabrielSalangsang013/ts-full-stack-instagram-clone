@@ -27,11 +27,6 @@ router.post('/activate',
     middleware.verifyPublicCSRFToken, 
     v1AuthenticationController.activate);
 
-router.post('/forgot-password', 
-    middlewareLimiter.forgotPasswordLimiter,
-    middleware.verifyPublicCSRFToken, 
-    v1AuthenticationController.forgotPassword);
-
 // * API TWO/MULTI FACTOR AUTHENTICATION
 router.post('/verification-code-login', 
     middlewareLimiter.verificationCodeLoginLimiter, 
@@ -43,11 +38,6 @@ router.post('/verification-code-login/logout',
     middleware.verifyPublicCSRFToken, 
     v1AuthenticationController.verificationCodeLoginLogout);
 
-router.post('/google-authenticator-code-login', 
-    middlewareLimiter.verificationCodeLoginLimiter,
-    middleware.verifyPublicCSRFToken, 
-    v1AuthenticationController.googleAuthenticatorCodeLogin);
-
 // * API THAT VERIFY PRIVATE CSRF TOKEN FIRST IN THE MIDDLEWARE
 router.get('/user', 
     middlewareLimiter.userLimiter, 
@@ -58,41 +48,10 @@ router.get('/user',
     v1AuthenticationController.user); 
     
  // * USER MUST BE AUTHETICATED
-router.delete('/user', 
-    middlewareLimiter.deleteUserLimiter, 
-    middleware.sendPublicCSRFTokenToUser, 
-    middleware.isAuthenticated, 
-    v1AuthenticationController.deleteUser); 
-
 router.post('/logout', 
     middlewareLimiter.logoutLimiter, 
     middleware.sendPublicCSRFTokenToUser, 
     middleware.isAuthenticated,
     v1AuthenticationController.logout); 
-
-router.post('/user/enable-google-authenticator', 
-    middlewareLimiter.enableGoogleAuthenticatorLimiter, 
-    middleware.isAuthenticated, 
-    v1AuthenticationController.enableGoogleAuthenticator);
-
-router.post('/user/activate-google-authenticator',
-    middlewareLimiter.activateGoogleAuthenticatorLimiter, 
-    middleware.isAuthenticated, 
-    v1AuthenticationController.activateGoogleAuthenticator);
-
-router.post('/user/disable-google-authenticator', 
-    middlewareLimiter.disableGoogleAuthenticatorLimiter, 
-    middleware.isAuthenticated, 
-    v1AuthenticationController.disableGoogleAuthenticator);
-
-// * API THAT VERIFY PRIVATE CSRF TOKEN VIA REQUEST BODY INSIDE CONTROLLER
-router.post('/reset-password', 
-    middlewareLimiter.resetPasswordLimiter, 
-    v1AuthenticationController.resetPassword);
-
-router.post('/account-recovery/reset-password/verify-token', 
-    middlewareLimiter.resetPasswordVerifyTokenLimiter, 
-    v1AuthenticationController.accountRecoveryResetPasswordVerifyToken);
-
 
 export default router;
