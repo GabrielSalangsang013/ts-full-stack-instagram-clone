@@ -92,6 +92,7 @@ $ npm install
 #### 8. Create .env file and fill up these (still inside frontend folder).
 
 ```
+# REACT API - BACKEND
 REACT_APP_API=http://localhost:4000
 ```
 
