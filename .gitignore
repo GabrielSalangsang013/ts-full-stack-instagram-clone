@@ -5,6 +5,7 @@
 /backend/dist
 /backend/.gitignore
 
+/frontend/.next
 /frontend/node_modules
 /frontend/.env
 /frontend/.gitignore

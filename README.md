@@ -8,39 +8,41 @@ This Instagram clone project replicates some of the features and functionality o
 
 ## How to use?
 
-#### 1. Install Redis and run Redis server - Follow this tutorial documentation for installation of Redis and run Redis Server [https://redis.io/docs/getting-started/installation/]
-
-#### 2. Clone the repo.
+#### 1. Clone the repo.
 ```sh
 $ git clone https://github.com/GabrielSalangsang013/ts-full-stack-instagram-clone.git
 ```
 
-#### 3. Open the project in VS code.
+#### 2. Open the project in VS code.
 
-#### 4. Open new VS code terminal.
+#### 3. Open new VS code terminal.
 
-#### 5. Go inside the backend folder, install all the packages.
+#### 4. Go inside the backend folder, install all the packages.
 
 ```sh
 $ cd backend
 $ npm install
 ```
 
-#### 6. Create .env file and fill up these (still inside backend folder).
+#### 5. Create .env file and fill up these (still inside backend folder).
 
 ```
 # TYPE OF NODE ENVIRONMENT
-NODE_ENV=DEVELOPMENT
+NODE_ENV=
 
 # PORT OF SERVER
-PORT=4000
-NODE_VERSION=18.16.0
+PORT=
+
+# VERSION OF NODE
+NODE_VERSION=
 
 # REACT URL - FRONTEND
-REACT_URL=http://localhost:3000
+REACT_URL=
 
-# REDIS URL - CACHE DATABASE
-REDIS_URL=redis://localhost:6379
+# REDIS CREDENTIALS - CACHE DATABASE
+REDIS_PASSWORD=
+REDIS_SOCKET_HOST=
+REDIS_SOCKET_PORT=
 
 # MONGO DATABASE URI
 MONGO_DB_URI=
@@ -74,26 +76,26 @@ GOOGLE_IDENITY_SERVICES_CLIENT_ID=
 CLOUDINARY_URL=
 ```
 
-#### 7. Run the backend server.
+#### 6. Run the backend server.
 
 ```sh
 $ npm run dev
 ```
 
-#### 8. Open another new VS code terminal and go to frontend folder.
+#### 7. Open another new VS code terminal and go to frontend folder.
 
 ```sh
 $ cd frontend
 $ npm install
 ```
 
-#### 9. Create .env file and fill up these (still inside frontend folder).
+#### 8. Create .env file and fill up these (still inside frontend folder).
 
 ```
 REACT_APP_API=http://localhost:4000
 ```
 
-#### 10. Run the frontend server.
+#### 9. Run the frontend server.
 
 ```sh
 $ npm run dev

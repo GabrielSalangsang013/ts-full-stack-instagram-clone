@@ -5,7 +5,13 @@ declare global {
             
             PORT: string;
 
+            NODE_VERSION: string;
+
             REACT_URL: string;
+
+            REDIS_PASSWORD: string;
+            REDIS_SOCKET_HOST: string;
+            REDIS_SOCKET_PORT: string;
             
             MONGO_DB_URI: string;
             MONGO_DB_URI_LIMITER: string;
@@ -24,6 +30,10 @@ declare global {
             EMAIL_FROM: string;
             
             GOOGLE_AUTHENTICATOR_NAME: string;
+
+            GOOGLE_IDENITY_SERVICES_CLIENT_ID: string;
+
+            CLOUDINARY_URL: string;
         }
     }
 }
